@@ -1,5 +1,9 @@
 #!/bin/bash
 #cores=$(nproc --all)
+#zramを1coreで運用します。ついでにlz4という展開速度の速いアルゴリズムを使わせます。
+#カーネル3.15以上
+#For multicore systems, set maxs equal to the number of cores. If you're using old kernel (< 3.15), configure separate swap devices per core
+#https://wiki.gentoo.org/wiki/Zram
 cores=1
 
 swapoff -a
