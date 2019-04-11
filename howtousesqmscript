@@ -1,1 +1,18 @@
-sqm-scriptの使い方。
+# https://github.com/tohojo/sqm-scripts
+# これは出力と入力を同時に帯域制限しQoSも兼ねたスクリプトです。 
+# sqm-scriptの使い方。
+# インストールは
+git clone https://github.com/tohojo/sqm-scripts.git
+cd sqm-scripts
+sudo make install
+
+# 設定は
+# cd /etc/sqm;ls -a
+# にあるeth0.iface.conf.exampleの.exampleをとって編集して同じ場所に保存してください。
+# eth0,eno1などのインターフェース名は読み替えてください。
+# 実行はsudo sqm start eth0
+# 停止はsudo sqm stop eth0
+# 起動時に自動的に実行されます。実行されないやり方はわかりません。
+# アンインストールは手動で行います。
+# インストールしたときに、ファイルリストがでます。ファイル名を見て一つ一つ削除します。
+# 再インストールして確認するといいと思います。
