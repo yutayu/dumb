@@ -6,7 +6,7 @@
 #https://wiki.gentoo.org/wiki/Zram
 #sudo　chmod +x を適用してお試しください。
 #このスクリプトは75%(3/4)の物理メモリを圧縮します。調整は3/4の分数をみなおしてください。
-#swappiness=100をおすすめします。 
+#swappiness=80をおすすめします。 
 cores=1
 
 swapoff -a
