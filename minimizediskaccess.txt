@@ -10,7 +10,7 @@ systemctl disable dphys-swapfile
 apt install chrony
 
 # Please use chrony for NTP to nodiskaccess.
-# Please use systemd-journald with volatile.
+# Please use systemd-journald with volatile,edit /etc/systemd/systemd-journald.conf
 # Please use tmpfs on /tmp,edit /etc/fstab.
 
 # According to ...
