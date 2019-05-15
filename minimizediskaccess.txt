@@ -1,0 +1,31 @@
+# to reduce diskaccess .
+
+systemctl stop rsyslog
+systemctl disable rsyslog
+systemctl stop systemd-timesyncd
+systemctl disable systemd-timesyncd
+systemctl stop dphys-swapfile # no swap on disk.
+systemctl disable dphys-swapfile
+
+apt install chrony
+
+# Please use chrony for NTP to nodiskaccess.
+# Please use systemd-journald with volatile.
+# Please use tmpfs on /tmp,edit /etc/fstab .
+
+# According to ...
+# https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_a_USB_key#Minimizing_disk_access
+# https://wiki.archlinux.org/index.php/Systemd-timesyncd , read leading text
+# https://wiki.archlinux.org/index.php/Tmpfs
+
+1 More !
+How about using zram ? :P
+
+apt install zram-tools
+
+edit /etc/default/zramswap
+add swappiness=100 on /etc/sysctl.conf
+
+# you can add compressed memory bye 75% physical memory.
+# https://wiki.debian.org/ZRam
+
