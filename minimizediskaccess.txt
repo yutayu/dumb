@@ -30,3 +30,7 @@ add swappiness=100 on /etc/sysctl.conf
 # https://wiki.debian.org/ZRam
 
 at last ,reboot!
+
+
+# In addition,If you use raspbian,to stop polling disk remove wifi manager from desktop bar.
+ 
