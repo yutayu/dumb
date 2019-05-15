@@ -29,3 +29,4 @@ add swappiness=100 on /etc/sysctl.conf
 # you can add compressed memory by 75% physical memory.
 # https://wiki.debian.org/ZRam
 
+at last ,reboot!
