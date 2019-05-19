@@ -36,6 +36,4 @@ at last ,reboot!
  
 1 More!
 Browser Profile in tempfs
-
-Profile-sync-daemon
-https://wiki.archlinux.org/index.php/Profile-sync-daemon
+https://wiki.archlinux.org/index.php/Firefox/Profile_on_RAM#Place_profile_in_RAM_manually
