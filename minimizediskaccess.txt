@@ -37,3 +37,7 @@ at last ,reboot!
 1 More!
 Browser Profile in tempfs
 https://wiki.archlinux.org/index.php/Firefox/Profile_on_RAM#Place_profile_in_RAM_manually
+
+or use this
+https://github.com/StuartIanNaylor/zram-swap-config
+very useful tool for Debian descend.
